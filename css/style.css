@@ -131,19 +131,25 @@ nav ul li ul.dropdown li {
 */
 
 footer {
+    margin-top: 105px;   
+    margin-bottom: 50px;
+}
+footer p{
     margin: auto;
     width: 70%;
     padding: 2px;
     text-align: center;
-    margin-top: 0;
+    color: 3B3B3E;
+    font-size: 90%;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
 }
-
 
 /*
     kilde liste formatering
 */
 
-.kilder li {
+.kilder li {    
     list-style-type: none;
 }
 
