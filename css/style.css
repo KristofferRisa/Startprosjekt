@@ -52,18 +52,16 @@ ul			{
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
-<<<<<<< HEAD
+
 }
 
 nav ul {
 	display: inline-block;
-=======
     margin-bottom: 25px;
  }
 
 nav ul {
     display: inline-block;
->>>>>>> KristofferRisa/master
     padding: 0;
     list-style: none;
     background: url("../img/header-bkg.jpg") repeat;
