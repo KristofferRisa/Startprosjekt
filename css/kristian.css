@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 			{
+			font-family: 'Economica', sans-serif;
+			font-size: 200%;
+			padding: 0px;
+			margin: 0;
+			}
+h2  		{
+			font-family: 'Economica', sans-serif;
+			}
+h3			{
+			font-family: 'Economica', sans-serif;
+			}
+h4			{
+			font-family: 'Economica', sans-serif;
+			}			
+p			{
+			font-family: 'Cutive Mono', sans-serif;
+			}
+ul			{
+			font-family: 'Cutive Mono', cursive;
+			}
+#header 	{
+			-moz-border-radius: 10px 10px 0px 0px; /* runde hjørner for firefox */
+			-webkit-border-radius: 10px 10px 0px 0px; /*runde hjørner for chrome og safari */
+			border-radius: 10px 10px 0px 0px; /* dette er CSS3 - fungerer ikke overalt... standardverdi uten prefix MÅ stå til slutt*/
+			padding: 10px; /* skriver vi bare 1 verdi så gjelder det alle 4 sider. Skriver du istedenfor 10px 5px 10px 5px så betyr det henholdsvis: top right bottom left */
+			background-color: #CCC;
+			margin:auto;
+			width: 1200px;
+			}
+#container	{
+			width: 1220px;
+			margin: auto;
+			}
+ul			{
+        	padding: 0;
+        	list-style: none;
+        	background: #CCC;
+    		}
+ul li		{
+        	display: inline-block;
+        	position: relative;
+        	line-height: 21px;
+        	text-align: center;
+    		}
+ul li a		{
+        	display: block;
+        	padding: 8px 25px;
+        	color: #333;
+        	text-decoration: none;
+    		}
+ul li a:hover{
+        	color: #7f49a7;
+        	background: #939393;
+    		}
+ul li ul.dropdown{
+        	min-width: 206px; /* Bredde for dropdown */
+        	background: #f2f2f2;
+        	display: none;
+        	position: absolute;
+        	z-index: 999;
+        	left: 0;
+    		}
+ul li:hover ul.dropdown{
+       		display: block;	/* Viser dropdown som block ved hover */
+    		}
+ul li ul.dropdown li{
+        	display: block;
+    		}
+#footer p 	{
+			color: 3B3B3E;
+			font-size: 90%;
+			text-align: center;
+			font-family: 'Economica', sans-serif;
+			}
