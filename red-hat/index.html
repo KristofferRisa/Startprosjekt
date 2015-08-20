@@ -7,7 +7,7 @@
         1. Gjør ferdig innhold
         2. Lag en responsiv meny bar 
              http://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/
-        3. Fikse footer
+       
     -->
     
 <head>
@@ -15,45 +15,39 @@
     <title>Linux Debian</title>
     <meta name="description" content="Distro site for Linux Debian">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+    <body>
 <div id="logo" class="logo">
-    <img src="img/linux.jpg">
+    <a href="/"><img src="/img/linux.jpg"></a>
 </div>
 <nav id="nav" class="nav">
-    <ul>
-        <li>
-            <a href="./">Hjem</a>
-        </li>
-        <!--li>
-                <a href="/#distrubsjoner">Distrubsjoner</a-->
-        <!--ul-->
-        <li>
-            <a href="ubuntu.html">Ubuntu</a>
-        </li>
-        <li>
-            <a href="debian.html">Debian</a>
-        </li>
-        <li>
-            <a href="arch.html">Arch</a>
-        </li>
-        <li>
-            <a href="red-hat.html">Red Hat</a>
-        </li>
-        <li>
-            <a href="tails.html">Tails</a>
-            <!--/li>
-                </ul-->
-        </li>
-        <li>
-            <a href="./#om">Om siden</a>
-        </li>
-    </ul>
-</nav>
+        <ul>
+            <li>
+                <a href="/">Hjem</a>
+            </li>
+                            <li>
+                    <a href="#">Distrobusjoner &#9662;</a>
+                    <ul class="dropdown">
+                        <li><a href="/ubuntu">Ubuntu</a></li>
+                        <li><a href="/debian">Debian</a></li>
+                        <li><a href="/mint">Mint</a></li>
+                        <li><a href="/arch">Arch</a></li>
+                        <li><a href="/tails">Tails</a></li>
+                        <li><a href="/red-hat">Red Hat</a></li>
+                    </ul>
+                </li>
+            <li>
+                <a href="/#om">Om siden</a>
+            </li>
+        </ul>
+    </nav>
 <div class="container">
     <head>
-        <img src="img/logo_debian.png" alt="Debian logo">   
+        <img src="/img/logo_redhat.png" alt="Red Hat logo">   
     </head>
  <!--aside id="wiki" class="wiki">
             <dl>
@@ -141,7 +135,7 @@ dpkg provides the low-level infrastructure for package management.[35] The dpkg 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 
 </body>
 
