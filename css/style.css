@@ -127,6 +127,7 @@ nav ul li ul.dropdown li {
 }*/
 
 .container {
+    padding: 40px;
     margin: auto;
     width: 60%;
 }
