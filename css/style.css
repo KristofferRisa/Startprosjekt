@@ -52,6 +52,11 @@ ul			{
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
+
+}
+
+nav ul {
+	display: inline-block;
     margin-bottom: 25px;
  }
 
@@ -67,7 +72,7 @@ nav ul li {
     display: inline-block;
     position: relative;
     line-height: 21px;
-    text-align: center;
+    
 }
 
 nav ul li a {
