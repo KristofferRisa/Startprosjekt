@@ -2,8 +2,9 @@
 
     Top Banner logo section
 */
+
 body {
-  margin: 0;
+    margin: 0;
 }
 
 article,
@@ -19,42 +20,48 @@ menu,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
 }
 
 img {
-  border: 0;
+    border: 0;
 }
 
 .logo {
     background: url("../img/header-bkg.jpg") repeat fixed center;
 }
 
+
 /*
 	Font type og størrelse
 */
 
-h1 			{
-			font-family: 'Economica', sans-serif;
-			font-size: 200%;
-			padding: 0px;
-			margin: 0;
-			}
-h2  		{
-			font-family: 'Economica', sans-serif;
-			}
-h3			{
-			font-family: 'Economica', sans-serif;
-			}
-h4			{
-			font-family: 'Economica', sans-serif;
-			}			
-p			{
-			font-family: 'Cutive Mono', sans-serif;
-			}
-ul			{
-			font-family: 'Cutive Mono', cursive;
-			}
+h1 {
+    font-family: 'Economica', sans-serif;
+    font-size: 200%;
+    padding: 0px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Economica', sans-serif;
+}
+
+h3 {
+    font-family: 'Economica', sans-serif;
+}
+
+h4 {
+    font-family: 'Economica', sans-serif;
+}
+
+p {
+    font-family: 'Cutive Mono', sans-serif;
+}
+
+ul {
+    font-family: 'Cutive Mono', cursive;
+}
 
 
 /*
@@ -75,13 +82,12 @@ ul			{
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
-
 }
 
 nav ul {
-	display: inline-block;
+    display: inline-block;
     margin-bottom: 25px;
- }
+}
 
 nav ul {
     display: inline-block;
@@ -95,7 +101,6 @@ nav ul li {
     display: inline-block;
     position: relative;
     line-height: 21px;
-    
 }
 
 nav ul li a {
@@ -105,7 +110,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+a:hover {
     color: #70B955;
     background: url("../img/header-bkg.jpg") repeat fixed center;
 }
@@ -161,10 +166,14 @@ nav ul li ul.dropdown li {
 */
 
 footer {
-    margin-top: 105px;   
-    margin-bottom: 50px;
+    
+    background-color: black;
+    color: aliceblue;
+    opacity: 0.7;
+    padding: 30px;
 }
-footer p{
+
+footer p {
     margin: auto;
     width: 70%;
     padding: 2px;
@@ -175,43 +184,7 @@ footer p{
     font-family: 'Economica', sans-serif;
 }
 
-/*
-    kilde liste formatering
-*/
-
-.kilder li {    
-    list-style-type: none;
-}
-
-
-/*
-    Wiki CSS - formating the Definition List
-*/
-
-#wiki {
-    float: right;
-    width: 450px;
-}
-
-.wiki dl {
-    border: 3px double #ccc;
-    padding: 0.5em;
-}
-
-.wiki dt {
-    float: left;
-    clear: left;
-    width: 160px;
-    text-align: right;
-    font-weight: bold;
-    color: green;
-}
-
-.wiki dt:after {
-    content: ": ";
-}
-
-.wiki dd {
-    margin: 0 0 0 110px;
-    padding: 0 0 0.5em 0;
+a {
+    color: white;
+    text-decoration: none;
 }
