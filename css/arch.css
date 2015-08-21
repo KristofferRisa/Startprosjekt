@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS dokument med alt CSS for Arch */
+
+nav {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+}
+#meny {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+#dropdown {
+	display: list-item;
+}
+
+

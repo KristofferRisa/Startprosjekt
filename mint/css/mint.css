@@ -1,0 +1,45 @@
+
+/*aside ul {
+    display:block;
+    padding: 5px;
+    float: right;
+}
+*/
+
+#sidebarmint aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding-right: 50px;
+    padding-top: 100px;
+} 
+
+#sidebarmint aside ul li a {
+	display: block;
+	width: 60px;
+	background-color: black;
+	color: white;
+	padding: 10px 50px;
+	text-decoration: none;
+	border-radius: 7px 7px 7px 7px;
+}
+
+#sidebarmint aside ul li a:hover {
+	background-color: green;
+}
+
+#sidebarmint aside li {
+	padding: 20px;
+	list-style-type: none;
+}
+
+
+header {
+	color:green;
+	padding: 40px;
+	margin:auto;
+	text-align: center;
+	padding-bottom: 0px;
+}
+ 

@@ -2,6 +2,7 @@
 
     Top Banner logo section
 */
+
 body {
     margin: 0;
 }
@@ -25,7 +26,6 @@ summary {
 
 img {
     border: 0;
-    max-width: 100%;
 }
 
 .logo {
@@ -35,6 +35,7 @@ img {
 /*
 	Font type og størrelse
 */
+
 h1 {
     font-family: 'Economica', sans-serif;
     font-size: 200%;
@@ -55,11 +56,11 @@ h4 {
 }
 
 p {
-    font-family: 'Cutive Mono', sans-serif;
+    font-family: 'Economica', sans-serif;
 }
 
 ul {
-    font-family: 'Cutive Mono', cursive;
+    font-family: 'Economica', sans-serif;
 }
 
 
@@ -73,9 +74,11 @@ ul {
     margin-right: auto;
 }
 
+
 /*
     Nav section
 */
+
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
@@ -135,6 +138,7 @@ nav ul li ul.dropdown li {
 /*
     CSS for sticky navbar
 */
+
 .navbar-fixed {
     top: 0;
     z-index: 100;
@@ -143,6 +147,12 @@ nav ul li ul.dropdown li {
     opacity: 0.7;
 }
 
+
+/*.parallax{
+   // width: 100%;
+    //height: 200px;
+    //background-color: azure;
+}*/
 
 .container {
     padding: 40px;
@@ -154,7 +164,9 @@ nav ul li ul.dropdown li {
 /*
     Footer section
 */
-footer {    
+
+footer {
+    
     background-color: black;
     color: aliceblue;
     opacity: 0.7;
@@ -177,10 +189,23 @@ footer a {
     text-decoration: none;
 }
 
-/* Klasse for å legge footer section på bånn av siden til CSS faen  */
-.bottom {
-        position:absolute;
-          bottom:0px;
-          width:100%;
-          height:100px; 
+
+/*EGEN CSS*/
+
+
+#ubuntu img {
+    margin-right: auto;
+    margin-right: auto;
+    position: center;
+    padding-bottom: 50px;
 }
+
+#boks {
+    list-style: none; 
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left:700px;
+    float-right;
+}
+
