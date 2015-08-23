@@ -2,7 +2,6 @@
 <html lang="no">
 
 <!-- TODO -->
-
 <!-- 
         1. Gjør ferdig innhold
         2. Lag en responsiv meny bar 
@@ -15,20 +14,23 @@
     <title>Linux Debian</title>
     <meta name="description" content="Distro site for Linux Debian">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Economica" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/debian.css">
 </head>
 
 <body>
-    <div id="logo" class="logo">
-        <a href="/"><img src="/img/linux.jpg"></a>
-    </div>
+    <!-- Logo -->
+    <header id="logo" class="logo">
+        <a href="/"><img src="/img/linux.jpg" alt="Linux logo"></a>
+    </header>
+    
+    <!-- Navigasjon -->
     <nav id="nav" class="nav">
         <ul>
             <li>
-                <a href="/">Hjem</a>
+                <a href="/cssfaen.html">Hva syntes vi om CSS</a>
             </li>
             <li>
                 <a href="#">Distrobusjoner &#9662;</a>
@@ -46,11 +48,17 @@
             </li>
         </ul>
     </nav>
-    <div class="container">
-
+    <!-- Navigasjon ferdig -->
+    
+    <main class="container">
         <head>
+            <figure>
             <img src="../img/logo_debian.png" alt="Debian logo">
+            <figcaption>Fig1. - The Lnux debian logo.</figcaption>
+</figure>
         </head>
+        
+        <!-- Wiki seksjon -->
         <aside id="wiki" class="wiki">
             <dl>
                 <dd><strong>Wiki</strong></dd>
@@ -63,41 +71,58 @@
                 <dt>Plattform</dt>
                 <dd>i386, AMD64, PowerPC, UltraSPARC</dd>
                 <dt>Skrivebordsmiljø</dt>
-                <dd>GNOME Kjerne Linux, GNU Hurd, kFreeBSD[2], NetBSD[3]</dd>
+                <dd>GNOME, GNU Hurd, kFreeBSD[2], NetBSD[3]</dd>
                 <dt>Lisens</dt>
                 <dd>Fri programvare Nettside www.debian.org</dd>
             </dl>           
         </aside>
 
+        <!--article>
+            <h2>Hva er Debian</h2>
+            <p>Debian er en distrubert utgave av linux med ett sett av ferdig installerte pakker\programmer. Debian er gratis å bruk gratis å bruke.</p>
+            <p>For mere informasjone se <a href="https://www.debian.org/doc/manuals/debian-faq/ch-basic_defs.en.html#s-whatisdebian" target="_blank">debian.org</a>.</p>
+            
+        </article-->
+        
+        
+        <!-- Om  -->
         <article id="om">
-            <h3>Om Linux Debian</h3>
-            <p>Debian et fritt tilgjengelig operativsystem til datamaskinen din. Debian er bestående av fri programvare, utviklet gjennom samarbeid mellom frivillige over hele verden. Debian GNU/Linux er basert på Linux-kjernen, og bruker mange av programmene og verktøyene fra GNU-prosjektet. Debian ble grunnlagt i 1993 av Ian Murdock, og er en av de eldre Linuxdistribusjonene. Den første stabile versjonen av Debian GNU/Linux, 1.1 kom i 1996.</p>
+            <h2>Historien om Linux Debian</h2>
+            <p>Debian GNU/Linux er basert på Linux-kjernen og bruker mange av programmene og verktøyene fra GNU-prosjektet. Debian ble grunnlagt i 1993 av Ian Murdock og er en av de eldre Linuxdistribusjonene. Den første stabile versjonen av Debian GNU/Linux, 1.1 kom i 1996.</p>
+            <p>Den stabile distribusjonen er veldig ofte brukte på PC og nettverksservere, samt at den også er blitt brukt som base for flere andre Linux-distribusjoner.</p>
+            <p></p>
+            
+            <p>Debian har mer enn 43000 pakker tilgjengelig, dette er ferdigbygde programmer pakket inn i et egnet format slik at man lettvint kan installere og oppgradere disse. Pakkebehandler for Debian heter <a href="https://en.wikipedia.org/wiki/Dpkg" target="_blank">dpgk</a>.</p>
+            <p>For komplett prosjekt historikk, se <a href="https://www.debian.org/doc/manuals/project-history/" target="_blank">www.debian.org/doc/manuals/project-history/</a></p>
+            <br/>
+            
+            <figure>
+                <img src="http://www.linuxscreenshots.org/screenshots/960600/Debian%208.0.0%20GNOME/39.jpg" alt="Debian desktop environment">
+                <figcaption>Fig2. Debian GNOME desktop skjermbilde hentet fra <a href="http://www.linuxscreenshots.org/?release=Debian%208.0.0%20GNOME" target="_blank">linuxscreenshots.org</a></figcaption>
+                <p>Følg denne <a href="http://www.linuxscreenshots.org/?release=Debian%208.0.0%20GNOME" target="_blank" >linken</a> for flere skjermbilder.</p>
+            </figure>            
         </article>
-
-        <article id="package-manager">
-            <h3>Package Management</h3>
-            <p>
-                Package manager heter <strong>dpkg</strong>. Package management operations can be performed with different tools available on Debian, from the lowest level command dpkg to graphical front-ends like Synaptic. The recommended standard for administering packages on a Debian system is the apt toolset.[34] dpkg provides the low-level infrastructure for package management.[35] The dpkg database contains the list of installed software on the current system. The dpkg command tool does not know about repositories. The command can work with local .deb package files as well as information from the dpkg database.
-
-            </p>
-
-        </article>
-
+        
+        <!-- Liste over de forskjellige Debian utgavene -->
         <section id="Releaser">
-            <h3>Releaser</h3>
+            <h2>Releaser</h2>
             <ul>
-                <li>Debian 8 (jessie) — current stable release</li>
-                <li>Debian 7 (wheezy) — obsolete stable release</li>
-                <li>Debian 6.0 (squeeze) — obsolete stable release</li>
-                <li>Debian GNU/Linux 5.0 (lenny) — obsolete stable release</li>
-                <li>Debian GNU/Linux 4.0 (etch) — obsolete stable release</li>
-                <li>Debian GNU/Linux 3.1 (sarge) — obsolete stable release</li>
-                <li>Debian GNU/Linux 3.0 (woody) — obsolete stable release</li>
-                <li>Debian GNU/Linux 2.2 (potato) — obsolete stable release</li>
-                <li>Debian GNU/Linux 2.1 (slink) — obsolete stable release</li>
-                <li>Debian GNU/Linux 2.0 (hamm) — obsolete stable release</li>
+                <li><strong>Debian 8 (jessie)</strong> — current stable release</li>
+                <li><strong>Debian 7 (wheezy)</strong> — obsolete stable release</li>
+                <li><strong>Debian 6.0 (squeeze)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 5.0 (lenny)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 4.0 (etch)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 3.1 (sarge)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 3.0 (woody)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 2.2 (potato)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 2.1 (slink)</strong> — obsolete stable release</li>
+                <li><strong>Debian GNU/Linux 2.0 (hamm)</strong> — obsolete stable release</li>
             </ul>
         </section>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/en/timeline/ce89cc1c1c85b0ea85fc1f29c14b563c.png" alt="Debian release timeline">
+            <figcaption>Fig3. Debian release timeline hentet fra <a href="https://en.wikipedia.org/wiki/Debian#Release_timeline" target="_blank">wikipedia</a>.</figcaption>
+        </figure>
 
         <section id="download">
             <p>
@@ -105,19 +130,22 @@
             </p>
         </section>
 
+        
         <section id="kilder" class="kilder">
-            <h3>Kilder:</h3>
+            <h2>Kilder:</h2>
             <ul>
-                <li><a href="https://no.wikipedia.org/wiki/Debian">no.wikipedia.org</a>
+                <li><a href="https://no.wikipedia.org/wiki/Debian" target="_blank">no.wikipedia.org</a>
                 </li>
-                <li><a href="https://wiki.debian.org/tasksel">wiki.debian.org</a>
+                <li><a href="https://en.wikipedia.org">en.wikipedia.org</a></li>
+                <li><a href="https://wiki.debian.org/tasksel" target="_blank">wiki.debian.org</a>
                 </li>
-                <li><a href="https://www.debian.org/">www.debian.org</a>
+                <li><a href="https://www.debian.org/" target="_blank">debian.org</a>
                 </li>
+                <li><a href="http://www.linuxscreenshots.org/?release=Debian%208.0.0%20GNOME" target="_blank" >linuxscreenshots.org</a></li>
             </ul>
         </section>
 
-    </div>
+    </main>
     <footer>
         <p>
             Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen
@@ -126,8 +154,8 @@
         <p>Mer info om gruppen finnes <a href="http://wedontknow.codes">her</a></p>
         <p>Sends oss en <a href="mailto:post@wedontknow.codes">mail</a></p>
     </footer>
-
-
+    
+    <!-- jQuery biblotek og skript for sticky navbar  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/scripts.js"></script>
 

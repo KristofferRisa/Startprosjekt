@@ -36,24 +36,14 @@ img {
 	Font type og størrelse
 */
 h1 {
-    font-family: 'Economica', sans-serif;
     font-size: 200%;
     padding: 0px;
     margin: 0;
 }
 
-h2 {
+h1,h2,h3,h4,figcaption {
     font-family: 'Economica', sans-serif;
 }
-
-h3 {
-    font-family: 'Economica', sans-serif;
-}
-
-h4 {
-    font-family: 'Economica', sans-serif;
-}
-
 p {
     font-family: 'Cutive Mono', sans-serif;
 }
