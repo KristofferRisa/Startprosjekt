@@ -2,8 +2,10 @@
 
     Top Banner logo section
 */
+
 body {
     margin: 0;
+    
 }
 
 article,
@@ -25,7 +27,6 @@ summary {
 
 img {
     border: 0;
-    max-width: 100%;
 }
 
 .logo {
@@ -35,21 +36,32 @@ img {
 /*
 	Font type og størrelse
 */
+
 h1 {
+    font-family: 'Economica', sans-serif;
     font-size: 200%;
     padding: 0px;
     margin: 0;
 }
 
-h1,h2,h3,h4,figcaption {
+h2 {
     font-family: 'Economica', sans-serif;
 }
+
+h3 {
+    font-family: 'Economica', sans-serif;
+}
+
+h4 {
+    font-family: 'Economica', sans-serif;
+}
+
 p {
-    font-family: 'Cutive Mono', sans-serif;
+    font-family: 'Economica', sans-serif;
 }
 
 ul {
-    font-family: 'Cutive Mono', cursive;
+    font-family: 'Economica', sans-serif;
 }
 
 
@@ -63,9 +75,11 @@ ul {
     margin-right: auto;
 }
 
+
 /*
     Nav section
 */
+
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
@@ -125,6 +139,7 @@ nav ul li ul.dropdown li {
 /*
     CSS for sticky navbar
 */
+
 .navbar-fixed {
     top: 0;
     z-index: 100;
@@ -133,6 +148,12 @@ nav ul li ul.dropdown li {
     opacity: 0.7;
 }
 
+
+/*.parallax{
+   // width: 100%;
+    //height: 200px;
+    //background-color: azure;
+}*/
 
 .container {
     padding: 40px;
@@ -144,7 +165,9 @@ nav ul li ul.dropdown li {
 /*
     Footer section
 */
-footer {    
+
+footer {
+    
     background-color: black;
     color: aliceblue;
     opacity: 0.7;
@@ -156,7 +179,7 @@ footer p {
     width: 70%;
     padding: 2px;
     text-align: center;
-    color: #3B3B3E;
+    color: 3B3B3E;
     font-size: 90%;
     text-align: center;
     font-family: 'Economica', sans-serif;
@@ -166,3 +189,55 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+
+/*EGEN CSS*/
+
+
+h1, h2, h3, h4, p, ul{
+    font-family: 'Economica', sans-serif;
+    text-align: left;
+}
+
+/* Dette var css'n til en meny som ikke er på siden lenger,
+den blir satt inn igjen om jeg får mulighet til det */
+
+#menu li {display: inline-block;
+            text-align: center;
+            padding:5px;
+            margin:20px;
+            font-size: 200%;
+            color:#56347C;
+            }
+
+#menu li a{text-decoration: none;}
+#menu li a:visited{
+            font-weight:bold;
+            color:#3D265B;
+            background-color:;
+            text-decoration: none;
+}
+#menu li a:hover, a:active{
+            color:#492E6B; 
+
+    }
+
+ul#menu{
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding 0;
+/*fortsetter egen her*/
+    
+
+}
+#box{
+    display: inline;
+    font-size: 130%;
+    list-style:none;
+    padding: 15px;
+    margin-left: 10px;
+    border: 10px solid #56347C;
+    float:right;
+}
+

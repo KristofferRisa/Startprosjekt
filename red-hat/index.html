@@ -1,43 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="no">
 
-    <!-- TODO -->
-    
-    <!-- 
-        1. Gjør ferdig innhold
-        2. Lag en responsiv meny bar 
-             http://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/
-       
-    -->
-    
+<!-- | Header | = title, charset, meta description,  viewport for skalering på forskjellige enheter, import av Google fonts og linking til styles.css -->
+ 
 <head>
+	<title>Red Hat</title>
     <meta charset="utf-8">
-    <title>Linux Debian</title>
-    <meta name="description" content="Distro site for Linux Debian">
+    <meta name="description" content="| Distro for Linux | Red Hat |">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/red-hat.css">
 </head>
-    <body>
-<div id="logo" class="logo">
-    <a href="/"><img src="/img/linux.jpg"></a>
-</div>
-<nav id="nav" class="nav">
+
+<!-- | Body | = -->
+   
+<body>
+	<header id="logo" class="logo">
+    	<a href="../"><img src="../img/linux.jpg"></a>
+	</header>
+	
+<!-- | Main nav | = Navigasjon lik som ifra main index.html -->	
+	
+	<nav id="nav" class="nav">
         <ul>
             <li>
-                <a href="/">Hjem</a>
+                <a href="../cssfaen.html">Hva syntes vi om CSS</a>
             </li>
-                            <li>
+             	<li>
                     <a href="#">Distrobusjoner &#9662;</a>
                     <ul class="dropdown">
-                        <li><a href="/ubuntu">Ubuntu</a></li>
-                        <li><a href="/debian">Debian</a></li>
-                        <li><a href="/mint">Mint</a></li>
-                        <li><a href="/arch">Arch</a></li>
-                        <li><a href="/tails">Tails</a></li>
-                        <li><a href="/red-hat">Red Hat</a></li>
+                        <li><a href="../ubuntu">Ubuntu</a></li>
+                        <li><a href="../debian">Debian</a></li>
+                        <li><a href="../mint">Mint</a></li>
+                        <li><a href="../arch">Arch</a></li>
+                        <li><a href="../tails">Tails</a></li>
+                        <li><a href="../red-hat">Red Hat</a></li>
                     </ul>
                 </li>
             <li>
@@ -45,97 +44,108 @@
             </li>
         </ul>
     </nav>
-<div class="container">
-    <head>
-        <img src="/img/logo_redhat.png" alt="Red Hat logo">   
-    </head>
- <!--aside id="wiki" class="wiki">
-            <dl>
-                <dd><strong>Wiki</strong></dd>
-                <dt>Skaper</dt>
-                <dd>Ian Murdock</dd>
-                <dt>Utvikler</dt>
-                <dd>Brukernettverk</dd>
-                <dt>Utgitt</dt>
-                <dd>16. august 1993</dd>
-                <dt>Plattform</dt>
-                <dd>i386, AMD64, PowerPC, UltraSPARC</dd>
-                <dt>Skrivebordsmiljø</dt>
-                <dd>GNOME Kjerne Linux, GNU Hurd, kFreeBSD[2], NetBSD[3]</dd>
-                <dt>Lisens</dt>
-                <dd>Fri programvare Nettside www.debian.org</dd>
-            </dl>           
-        </aside-->
+
+<!-- | Container | = Her starter sidespesifikt innhold om Red Hat -->   
     
-    <article id="om" >
-        <h3>Om Linux Debian</h3>
-        <p >Debian et fritt tilgjengelig operativsystem til datamaskinen din. Debian er bestående av fri programvare, utviklet gjennom samarbeid mellom frivillige over hele verden. Debian GNU/Linux er basert på Linux-kjernen, og bruker mange av programmene og verktøyene fra GNU-prosjektet. Debian ble grunnlagt i 1993 av Ian Murdock, og er en av de eldre Linuxdistribusjonene. Den første stabile versjonen av Debian GNU/Linux, 1.1 kom i 1996.</p>
-    </article>
+<main class="container">
 
-    <article id="package-manager">
-        <h3>Package Management</h3>
-        <p>
-            Package manager heter <strong>dpkg</strong>.
-            Package management operations can be performed with different tools available on Debian, from the lowest level command dpkg to graphical front-ends like Synaptic. The recommended standard for administering packages on a Debian system is the apt toolset.[34]
+        <img src="../img/logo_redhat.png" alt="Red Hat logo"> 
+        <hr>  
 
-dpkg provides the low-level infrastructure for package management.[35] The dpkg database contains the list of installed software on the current system. The dpkg command tool does not know about repositories. The command can work with local .deb package files as well as information from the dpkg database.
-            
-        </p>
-
-    </article>
-
-    <section id="Releaser">
-        <h3>
-                Releaser
-            </h3>
-        <ul>
-            <li>Debian 8 (jessie) — current stable release</li>
-            <li>Debian 7 (wheezy) — obsolete stable release</li>
-            <li>Debian 6.0 (squeeze) — obsolete stable release</li>
-            <li>Debian GNU/Linux 5.0 (lenny) — obsolete stable release</li>
-            <li>Debian GNU/Linux 4.0 (etch) — obsolete stable release</li><li>Debian GNU/Linux 3.1 (sarge) — obsolete stable release</li>
-            <li>Debian GNU/Linux 3.0 (woody) — obsolete stable release</li>
-            <li>Debian GNU/Linux 2.2 (potato) — obsolete stable release</li>
-            <li>Debian GNU/Linux 2.1 (slink) — obsolete stable release</li>
-            <li>Debian GNU/Linux 2.0 (hamm) — obsolete stable release</li>
-        </ul>
-
+	<section>
+        <h3>Om Linux Red Hat</h3>
+        <p> INFO </p>
     </section>
+    
+    <!-- Wiki seksjon -->
+    <aside id="wiki" class="wiki">
+        <dl>
+            <dd><strong>Wiki</strong></dd>
+            <dt>Skaper</dt>
+            <dd>Ian Murdock</dd>
+            <dt>Utvikler</dt>
+            <dd>Brukernettverk</dd>
+            <dt>Utgitt</dt>
+            <dd>16. august 1993</dd>
+            <dt>Plattform</dt>
+            <dd>i386, AMD64, PowerPC, UltraSPARC</dd>
+            <dt>Skrivebordsmiljø</dt>
+            <dd>GNOME, GNU Hurd, kFreeBSD[2], NetBSD[3]</dd>
+            <dt>Lisens</dt>
+            <dd>Fri programvare Nettside www.debian.org</dd>
+        </dl>           
+    </aside>
 
-    <section id="download">
-        <p>
-            Du kan laste ned en gratis versjon av Linux Debian <a href="http://cdimage.debian.org/debian-cd/8.1.0/multi-arch/iso-cd/debian-8.1.0-amd64-i386-netinst.iso">her</a>.
-        </p>
+    <section id="releaser">
+        
+        <h3>Releaser Red Hat</h3>
+       		 
+       		 <ul>
+       		 	<li>Red Hat | V 9.0 | Shrike       </li>
+       		 	<li>Red Hat | V 8.0 | Psyche       </li>
+       		 	<li>Red Hat | V 7.3 | Valhalla     </li>
+       		 	<li>Red Hat | V 7.2 | Enigma       </li>
+       		 	<li>Red Hat | V 7.1 | Seawolf      </li>
+       		 	<li>Red Hat | V 7.0 | Guinness     </li>
+       		 	<li>Red Hat | V 6.2 | Zoot         </li>
+       		 	<li>Red Hat | V 6.1 | Cartman      </li>
+       		 	<li>Red Hat | V 6.0 | Hedwig       </li>
+       		 	<li>Red Hat | V 5.2 | Apollo       </li>
+       		 	<li>Red Hat | V 5.1 | Manhattan    </li>
+       		 	<li>Red Hat | V 5.0 | Hurricane    </li>
+       		 	<li>Red Hat | V 4.2 | Biltmore     </li>
+       		 	<li>Red Hat | V 4.1 | Vanderbilt   </li>
+            	<li>Red Hat | V 4.0 | Colgate      </li>
+            	<li>Red Hat | V 3.0 | Picasso      </li>
+            	<li>Red Hat | V 2.1 | Bluesky      </li>
+            	<li>Red Hat | V 2.0 |      -       </li>
+            	<li>Red Hat | V 1.0 | Mother's Day </li>
+       		 </ul>
+	
+    </section>
+    
+    <section id="releaser">
+        
+        <h3>Releaser Red Hat Enterprise</h3>
+       		 
+       		 <ul>
+       		 	<li>Red Hat Enterprise | V 7.0 | Maipo 		</li>
+       		 	<li>Red Hat Enterprise | V 6.0 | Santiago 	</li>
+       		 	<li>Red Hat Enterprise | V 5.0 | Tikanga	</li>
+       		 	<li>Red Hat Enterprise | V 4.0 | Nahant 	</li>
+       		 	<li>Red Hat Enterprise | V 3.0 | Taroon 	</li>
+            	<li>Red Hat Enterprise | V 2.1 | Pensacola 	</li>
+       		 </ul>
+    
     </section>
     
     <section id="kilder" class="kilder">
         <h3>Kilder:</h3>
         <ul>
             <li>
-                <a href="https://no.wikipedia.org/wiki/Debian">no.wikipedia.org</a>
+                <a href="https://en.wikipedia.org/wiki/Red_Hat_Linux">Red Hat Wiki</a>
             </li>
             <li>
-                <a href="https://wiki.debian.org/tasksel">wiki.debian.org</a>
+                <a href="https://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux">Red Hat Enterprise Wiki</a>
             </li>
             <li>
-<a href="https://www.debian.org/">www.debian.org</a>
+			<a href="http://www.redhat.com/en/about/company">redhat.com</a>
             </li>
         </ul>
-    </section>   
+    </section>
+</main>
+    
+<!-- | Footer | = Footer ifra main index.html --> 
    
-</div>
     <footer>
-    <p>
-        Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen
-    </p>
-    <p>Besøk også <a href="https://www.hbv.no/">skolens hjemmeside</a></p>
-    <p>Mer info om gruppen finnes <a href="http://wedontknow.codes">her</a></p>
-    <p>Sends oss en <a href="mailto:post@wedontknow.codes">mail</a></p>
-</footer>
+        <p>
+            |&nbsp;&nbsp; <a href="http://www.hbv.no/studietilbud/bachelor-i-informasjonssystemer-og-it-ledelse/">Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="https://www.hbv.no/">Besøk  skolens hjemmeside</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="http://wedontknow.codes">Mer info om gruppen finnes her</a>&nbsp;&nbsp;|</p>
+        <p>|&nbsp;&nbsp;<a href="mailto:post@wedontknow.codes">Sends oss en mail</a>&nbsp;&nbsp;|</p>
+    </footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 
 </body>
 
