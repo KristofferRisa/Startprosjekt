@@ -1,3 +1,14 @@
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px){
+    /*
+        Fjerner wiki box på mobile enheter som har
+        en maks skjermbredde på 480px;
+    */
+    .wiki {
+        display: none;
+    }
+}
+
 /* fonts */
 
 dd, dt {
@@ -11,37 +22,33 @@ dd, dt {
 .kilder li {
     list-style-type: none;
 }
-
-
-/*
-    Wiki CSS - formating the Definition List
-*/
-
-#wiki {
-    float: right;
-    width: 450px;
-}
-
-.wiki dl {
+    /*
+        Wiki CSS - formating the Definition List
+    */
+    #wiki {
+        float: right;
+        width: 450px;
+    }
     
-    padding: 0.5em;
-}
-
-.wiki dt {
-    float: left;
-    clear: left;
-    width: 160px;
-    text-align: right;
-    font-weight: bold;
-    color: green;
-}
-
-.wiki dt:after {
-    content: ": ";
-}
-
-.wiki dd {
-    margin: 0 0 0 110px;
-    padding: 0 0 0.5em 0;
-}
-
+    .wiki dl {
+        
+        padding: 0.5em;
+    }
+    
+    .wiki dt {
+        float: left;
+        clear: left;
+        width: 160px;
+        text-align: right;
+        font-weight: bold;
+        color: green;
+    }
+    
+    .wiki dt:after {
+        content: ": ";
+    }
+    
+    .wiki dd {
+        margin: 0 0 0 110px;
+        padding: 0 0 0.5em 0;
+    }
