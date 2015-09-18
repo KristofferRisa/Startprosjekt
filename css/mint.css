@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* CSS for sidebar/linker på høyre side */
+
+#sidebarmint aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+#sidebarmint aside ul li a {
+    display: inline-block;
+    width: 60px;
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 7px 7px 7px 7px;
+}
+
+#sidebarmint aside li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+
+/* Overskrift på sidebar */
+
+#linker {
+    text-align: center;
+    font-size: 118%;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+
+/* CSS for header og Mintlogo */
+
+header {
+    color: green;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+
+/* CSS for class=mintarticle og kilder*/
+
+.mintarticle {
+    color: black;
+}
+
+.mintarticle ul li {
+    padding: 5px;
+}
+
+.mintarticle h3 {
+    font-weight: bold;
+    color: green;
+    padding-top: 15px;
+}
+
+.horizontal {
+    display: inline;
+}
+
+
+/* Farger på linker */
+
+.container a {
+    color: green;
+}
+
+.container a:visited {
+    color: coral;
+}

@@ -1,0 +1,44 @@
+/*EGEN CSS*/
+
+/* Dette var css'n til en meny som ikke er på siden lenger,
+den blir satt inn igjen om jeg får mulighet til det */
+
+#menu li {display: inline-block;
+            text-align: center;
+            padding:5px;
+            margin:20px;
+            font-size: 200%;
+            color:#56347C;
+            }
+
+#menu li a{text-decoration: none;}
+#menu li a:visited{
+            font-weight:bold;
+            color:#3D265B;
+            background-color:;
+            text-decoration: none;
+}
+#menu li a:hover, a:active{
+            color:#492E6B; 
+
+    }
+
+ul#menu{
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding 0;
+/*fortsetter egen her*/
+    
+
+}
+#box{
+    display: inline;
+    list-style:none;
+    padding: 15px;
+    margin-left: 10px;
+    border: 10px solid #56347C;
+    float:right;
+}
+
+#tailsimg {text-align: center;}

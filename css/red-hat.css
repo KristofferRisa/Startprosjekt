@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+    Wiki CSS - formating the Definition List
+*/
+/*
+    Fjerner wiki box på mobile enheter som har
+    en maks skjermbredde på 480px;
+*/
+@media screen and (max-device-width: 480px){
+.wiki {
+    display: none;
+}
+}
+#wiki {
+    float: right;
+    width: 450px;
+}
+
+.wiki dl {
+    
+    padding: 0.5em;
+}
+
+.wiki dt {
+    float: left;
+    clear: left;
+    width: 160px;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+}
+
+.wiki dt:after {
+    content: ": ";
+}
+
+.wiki dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
