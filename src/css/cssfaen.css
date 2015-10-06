@@ -1,0 +1,37 @@
+html,
+body,
+.container-cssfaen {
+    height: 100%;
+}
+
+body > .container-cssfaen {
+    height: auto;
+}
+
+.container-cssfaen {
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+}
+/*
+    CSS-faen klasse for å som tilpasser footer iht video
+    når skjermoppløsning blir mindre enn hva header,nav og main elementene utgjør til sammen.
+*/
+
+@media only screen and (min-height: 628px) {
+    .cssfaen-container {
+        padding-bottom: 3em;
+    }
+    .cssfaen-footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+    }
+}
+
+.cssfaen-footer {
+    padding-bottom: 3em;
+    opacity: 1;
+}
