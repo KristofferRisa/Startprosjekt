@@ -20,7 +20,6 @@ nav,
 section,
 summary {
     display: block;
-    
 }
 
 img {
@@ -133,18 +132,21 @@ nav ul li ul.dropdown li {
     opacity: 0.7;
 }
 
+/*  */
+.navbar-fixed ~ .container{
+  margin-top: 78px;
+}
 
 .container {
     padding: 40px;
-    margin: auto;
+    margin: 0 auto;
     width: 60%;
 }
-
 
 /*
     Footer section
 */
-footer {    
+footer {
     background-color: black;
     color: aliceblue;
     opacity: 0.7;
@@ -166,4 +168,3 @@ footer a {
     color: white;
     text-decoration: none;
 }
-
