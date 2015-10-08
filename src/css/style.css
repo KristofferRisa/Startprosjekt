@@ -1,5 +1,4 @@
 /*
-
     Top Banner logo section
 */
 body {
@@ -173,4 +172,46 @@ footer p {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+/*
+    Makes the article more responsive
+  */
+@media screen and (min-width:1200px){
+  .two-col {
+      -webkit-columns: 2 200px;
+      -moz-columns: 2 200px;
+      columns: 2 200px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+      column-gap: 4em;
+ /*-webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+         column-rule: 1px dotted #ddd;*/
+         /*height: 450px;*/
+      }
+
+       /*
+           Wiki CSS - formating the Definition List
+       */
+       .wiki {
+           float: right;
+       }
+}
+
+@media screen and (max-width:1199px){
+  .two-col {
+      -webkit-columns: 1 200px;
+      -moz-columns: 1 200px;
+      columns: 1 200px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+      column-gap: 4em;
+ /*-webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+         column-rule: 1px dotted #ddd;*/
+       }
+}
+@media screen and (max-width: 500px) {
+
 }
