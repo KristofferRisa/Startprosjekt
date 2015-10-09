@@ -25,30 +25,46 @@ dd, dt {
     /*
         Wiki CSS - formating the Definition List
     */
-    #wiki {
+    #wiki {        
         float: right;
-        width: 450px;
+        margin: 5px 40px 30px 50px;
+        width: 365px;
+        font-family: 'Cutive Mono', sans-serif;
+        border: 2px solid black;
+        padding: 0px 10px 0px 10px;
+        font-size: 110%;
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
     
+
+
     .wiki dl {
-        
-        padding: 0.5em;
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
     }
     
     .wiki dt {
-        float: left;
-        clear: left;
-        width: 160px;
-        text-align: right;
+        float: left;                
+        width: 120px;        
         font-weight: bold;
         color: green;
     }
     
-    .wiki dt:after {
+/*    .wiki dt:after {
         content: ": ";
-    }
+    }*/
     
     .wiki dd {
         margin: 0 0 0 110px;
         padding: 0 0 0.5em 0;
     }
+    .wiki-header{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+        
