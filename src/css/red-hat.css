@@ -30,6 +30,7 @@
     text-align: right;
     font-weight: bold;
     color: green;
+    font-family: 'Cutive Mono', sans-serif;
 }
 
 .wiki dt:after {
@@ -39,4 +40,5 @@
 .wiki dd {
     margin: 0 0 0 110px;
     padding: 0 0 0.5em 0;
+    font-family: 'Cutive Mono', sans-serif;
 }

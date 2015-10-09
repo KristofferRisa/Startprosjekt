@@ -1,24 +1,95 @@
 /*EGEN CSS*/
 
+ #article 
+{
+font-size: 22px;
+}
 
-#ubuntu img {
+/**** UBUNTU BILDET ******/
+#ubuntu img 
+{
     margin-right: auto;
     margin-right: auto;
     padding-bottom: 50px;
     display: block;
-    
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    z-index: -1px;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+#ubuntu:hover img 
+{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: none;
+    filter: none;
 }
 
-
-#boksen {
-    border-style: solid;
-    border-width: 5px;
-    list-style:none;
-    border-color:#f47421;
-    float:right;
-    margin: -60px 50px 30px 50px;
-    font-size: 150%;
+/********** WIKI BOKS ***********/
+#wikitekst 
+{
+    font-style: bold;
+    font-size: 120%;
+    margin: 0 0 5px 0;
+}
+#wiki 
+{ 
+    float: right;
+    margin: 5px 40px 30px 50px;
+    width: 365px;
+    font-family: 'Cutive Mono', sans-serif;
+    border: 2px solid black;
+    padding: 0px 10px 0px 10px;
+    font-size: 110%;
+}
+#wiki dt 
+{
+    color: #f47421;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+#wiki dt:after 
+{
+    content:" ";
+}
+#wiki dd {
+    color: black;
+    margin: 0 0 0 150px;
+    padding: 0 0 0 0;
 }
 
-#kilder li {
+/*********** KILDE LISTE NEDERST ********/
+#kilder li 
+{
     list-style-type: none;
+}
+
+/************ SKJERMBILDET BILDET ************/
+#deskop img {
+    width: 65%;
+    height: 65%; 
+    margin: 20px 0 5px 0;
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    z-index: -1px;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+#deskop:hover img 
+{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: none;
+    filter: none;
+}
+#bildetekst 
+{
+    font-size: 80%;
+}
+
