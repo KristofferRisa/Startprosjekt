@@ -1,5 +1,4 @@
 /*
-
     Top Banner logo section
 */
 body {
@@ -68,6 +67,9 @@ ul {
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
     text-align: center;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 nav ul {
@@ -151,6 +153,9 @@ footer {
     color: aliceblue;
     opacity: 0.7;
     padding: 30px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 footer p {
@@ -167,4 +172,46 @@ footer p {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+/*
+    Makes the article more responsive
+  */
+@media screen and (min-width:1200px){
+  .two-col {
+      -webkit-columns: 2 200px;
+      -moz-columns: 2 200px;
+      columns: 2 200px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+      column-gap: 4em;
+ /*-webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+         column-rule: 1px dotted #ddd;*/
+         /*height: 450px;*/
+      }
+
+       /*
+           Wiki CSS - formating the Definition List
+       */
+       .wiki {
+           float: right;
+       }
+}
+
+@media screen and (max-width:1199px){
+  .two-col {
+      -webkit-columns: 1 200px;
+      -moz-columns: 1 200px;
+      columns: 1 200px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+      column-gap: 4em;
+ /*-webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+         column-rule: 1px dotted #ddd;*/
+       }
+}
+@media screen and (max-width: 500px) {
+
 }
