@@ -169,6 +169,10 @@ footer a {
     text-decoration: none;
 }
 
+.om {
+    margin-top: 50px;   
+}
+
 /*
     Makes the article more responsive
   */
@@ -179,7 +183,7 @@ footer a {
       columns: 2 200px;
       -webkit-column-gap: 4em;
       -moz-column-gap: 4em;
-      column-gap: 4em; 
+      column-gap: 4em;      
       }
 
        /*
@@ -191,7 +195,7 @@ footer a {
  .container {
     padding: 40px;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
  }
 }
 
