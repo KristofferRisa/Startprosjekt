@@ -1,46 +1,6 @@
-<!doctype html>
-<html lang="no">
-<head>
-    <meta charset="utf-8">
-    <title>Linux Debian</title>
-    <meta name="description" content="Distro site for Linux Debian">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/debian.css">
-</head>
-
-<body>
-    <!-- Logo -->
-    <header id="logo" class="logo">
-        <a href="../"><img src="../img/linux.jpg" alt="Linux logo"></a>
-    </header>
-
-    <!-- Navigasjon -->
-    <nav id="nav" class="nav">
-        <ul>
-            <li>
-                <a href="../cssfaen.html">Hva syntes vi om CSS</a>
-            </li>
-            <li>
-                <a href="#">Distrobusjoner &#9662;</a>
-                <ul class="dropdown">
-                    <li><a href="../ubuntu">Ubuntu</a></li>
-                    <li><a href="../debian">Debian</a></li>
-                    <li><a href="../mint">Mint</a></li>
-                    <li><a href="../arch">Arch</a></li>
-                    <li><a href="../tails">Tails</a></li>
-                    <li><a href="../red-hat">Red Hat</a></li>
-                    <li><a href="../elementary">Elementary</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="../#om">Om siden</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Navigasjon ferdig -->
+<?php
+    include("../header.html");
+?>
 
     <main class="container">
         <head>
@@ -128,25 +88,8 @@
         </section>
 
     </main>
-    <footer>
-        <p>
-            |&nbsp;&nbsp; <a href="http://www.hbv.no/studietilbud/bachelor-i-informasjonssystemer-og-it-ledelse/">Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="https://www.hbv.no/">Besøk  skolens hjemmeside</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="http://wedontknow.codes">Mer info om gruppen finnes her</a>&nbsp;&nbsp;|</p>
-        <p>|&nbsp;&nbsp;<a href="mailto:post@wedontknow.codes">Sends oss en mail</a>&nbsp;&nbsp;|</p>
-    </footer>
 
-    <!-- jQuery biblotek og skript for sticky navbar  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/scripts.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45634621-2', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-</body>
-</html>
+<?php
+    include("../footer.html");
+    include("../scripts.html");
+?>
