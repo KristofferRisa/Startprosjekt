@@ -1,6 +1,22 @@
-<?php
-    include("../header.html");
-?>
+<!doctype html>
+<html lang="no">
+<head>
+    
+    <?php
+        include("../header-partial.html");
+    ?>
+    
+    <title>Linux Debian</title>
+    <meta name="description" content="Distro site for Linux Debian">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/debian.css">    
+</head>
+    <body>
+
+    <?php
+        /* Laster inn navgiasjons html kode  */
+        include("../nav.html");
+    ?>
 
     <main class="container">
         <head>
@@ -89,7 +105,11 @@
 
     </main>
 
-<?php
-    include("../footer.html");
-    include("../scripts.html");
-?>
+    <?php
+        /* Laster inn fotter html kode  */
+        include("../footer.html");
+        /* Laster inn scripts */
+        include("../scripts.html");
+    ?>    
+    </body>
+</html>
