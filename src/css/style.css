@@ -39,7 +39,7 @@ h1 {
     margin: 0;
 }
 
-h1,h2,h3,h4,figcaption {
+h1,h2,h3,h4,figcaption,p {
     font-family: 'Economica', sans-serif;
 }
 p {
@@ -139,11 +139,6 @@ nav ul li ul.dropdown li {
   margin-top: 78px;
 }
 
-.container {
-    padding: 40px;
-    margin: 0 auto;
-    width: 60%;
-}
 
 /*
     Footer section
@@ -174,6 +169,10 @@ footer a {
     text-decoration: none;
 }
 
+.om {
+    margin-top: 50px;   
+}
+
 /*
     Makes the article more responsive
   */
@@ -184,11 +183,7 @@ footer a {
       columns: 2 200px;
       -webkit-column-gap: 4em;
       -moz-column-gap: 4em;
-      column-gap: 4em;
- /*-webkit-column-rule: 1px dotted #ddd;
-    -moz-column-rule: 1px dotted #ddd;
-         column-rule: 1px dotted #ddd;*/
-         /*height: 450px;*/
+      column-gap: 4em;      
       }
 
        /*
@@ -197,8 +192,16 @@ footer a {
        .wiki {
            float: right;
        }
+ .container {
+    padding: 40px;
+    margin: 0 auto;
+    width: 70%;
+ }
 }
 
+/*
+    Justerer innhold for mindre skjermer
+*/
 @media screen and (max-width:1199px){
   .two-col {
       -webkit-columns: 1 200px;
@@ -206,12 +209,27 @@ footer a {
       columns: 1 200px;
       -webkit-column-gap: 4em;
       -moz-column-gap: 4em;
-      column-gap: 4em;
- /*-webkit-column-rule: 1px dotted #ddd;
-    -moz-column-rule: 1px dotted #ddd;
-         column-rule: 1px dotted #ddd;*/
-       }
+      column-gap: 4em;      
+    }
+    
+    p {
+        font-size: 1.4em;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    .container {
+        padding: 40px;
+        margin: 0 auto;
+        width: 80%;
+    }
 }
+
 @media screen and (max-width: 500px) {
 
 }

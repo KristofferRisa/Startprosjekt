@@ -5,7 +5,7 @@
     <title>Om Linux Mint</title>
     <meta charset="UTF-8">
     <meta name="description" content="Linux Mint -en meget brukervennlig og elegant Linux operativstsyem" />
-    <meta name="keywords" content="Linux Mint, Operativsystem, Linux, Gratis, Brukervennlig" />
+    <meta name="keywords" content="Linux Mint, Operativsystem, Linux, GNU, Gratis, Brukervennlig, Distro" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -16,9 +16,9 @@
 
 <body>
     <!-- Felles header og meny -->
-    <div id="logo" class="logo">
+    <header id="logo" class="logo">
         <a href="/"><img src="../img/linux.jpg" alt="Linux"> </a>
-    </div>
+    </header>
     <nav id="nav" class="nav">
         <ul>
             <li>
@@ -42,42 +42,67 @@
     </nav>
     <!-- Slutt på felle header og meny -->
     <!-- Linux Mint Logo og overskrift-->
-    <header>
-        <img src="../img/400px-Linux_Mint_Official_Logo.png" alt="Linux mint image">
-        <h1>Linux Mint</h1>
-        <h2>-ett meget brukervennlig og elegant Linux operativstsyem</h2>
-    </header>
+    <main class="container">
+        <img src="../img/811px-Linux_Mint_Official_Logo.png" alt="Linux mint image">
+        <h2>-et meget brukervennlig og elegant Linux operativsystem</h2>
+    </main>
     <!-- Slutt på Linux Mint Logo og overskrift-->
     <!-- Egen sidebar med linker -->
-    <div id="sidebarmint">
+    <section id="sidebarmint">
         <aside>
             <ul>
                 <li id="linker">Linux linker</li>
-                <li><a href="http://linuxmint.com/" target="_blank">Mint</a></li>
-                <li><a href="http://linux1.no/" target="_blank">Linux1.no</a></li>
-                <li><a href="https://www.facebook.com/pages/Linux-Mint/185238108180410" target="_blank">Facebook</a></li>
-                <li><a href="http://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/" target="_blank">Humor!</a></li>
+                <li class="btn"><a href="http://linuxmint.com/" target="_blank">Mint</a></li>
+                <li class="btn"><a href="http://linux1.no/" target="_blank">Linux1.no</a></li>
+                <li class="btn"><a href="https://www.facebook.com/pages/Linux-Mint/185238108180410" target="_blank">Facebook</a></li>
+                <li class="btn"><a href="http://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/" target="_blank">Humor!</a></li>
             </ul>
         </aside>
-    </div>
+    </section>
     <!-- Slutt på sidebar med linker -->
     <!-- Bodytext/hovedinnhold -->
     <section class="container">
-        <article class="mintarticle">
+        <article class="mintarticle" id="startartikkel">
+            
             <p title="LinuxMint.com"><a href="http://www.linuxmint.com" target="_blank">Linux Mint</a> er et bra valg av operativstystem hvis man vil forsøke seg på Linux for første gang, eller om man er en dreven entusiast. </p>
-            <p>Linux Mint er grafisk et <a href="http://www.gnu.org/gnu/linux-and-gnu.html" target="_blank">GNU/Linux-operativsystem</a> som har blitt meget populært de siste årene. Første version av operativsystemet ble lansert i 2006 av Clement Lefebvre. Det kommer en ny utgivelse av Linux Mint to ganger i året, etter samme prisipp som Ubuntu. Alle Linux Mint utgavene har jentenavn og siste version av operativsystemet som ble lansert 30 juli 2015 heter <em>Linux Mint 17.2 - Rafaela.</em></p>
-            <p>Linux Mint kommer i flere utgaver som benytter seg av ulike skiverbordsmiljøer, hvor Cinnamon utgaven er den mest populære. De andre utgavene benytter seg av MATE, KDE eller XFCE. Linux Mint kommer også en i utgave som heter Linux Mint Debian Edition (LMDE). Denne utgaven er bassert på Debian Testing, og har ingen avhengigheter til Ubuntu i motsetning til de andre utgavene som er fullt ut kompatibelt med Ubuntu.</p>
+            <p>Linux Mint er grafisk et <a href="http://www.gnu.org/gnu/linux-and-gnu.html" target="_blank">GNU/Linux-operativsystem</a> som har blitt meget populært de siste årene. Første versjon av operativsystemet ble lansert i 2006 av Clement Lefebvre. Det kommer en ny utgivelse av Linux Mint to ganger i året, etter samme prinsipp som Ubuntu. Alle Linux Mint utgavene har jentenavn og siste versjon av operativsystemet, som ble lansert 30 juli 2015, heter <em>Linux Mint 17.2 - Rafaela.</em></p>
+
+            <!-- Wikibox -->
+            <article id="mintboxdiv">
+                <ul id="mintbox">
+                    <li>Skaper: "Clement Lefebvre"</li>
+                    <li>Utgitt: 27 August 2006</li>
+                    <li>Siste utgivelse: "Linux Mint 17.2 "Rafaela"</li>
+                    <li>Lisens: GPLV3+<br> (Fri programvare)</li>
+                    <li>Nettside: <a href="http://www.linuxmint.com/">www.linuxmint.com</a></li>
+                </ul>
+            </article>
+            <!-- Slutt på wikibox -->
+            <p>Linux Mint kommer i flere utgaver som benytter seg av ulike skiverbordsmiljøer, hvor Cinnamon utgaven er den mest populære. De andre utgavene benytter seg av MATE, KDE eller XFCE. Linux Mint kommer også i en utgave som heter Linux Mint Debian Edition (LMDE). Denne utgaven er basert på Debian Testing, og er helt uavhengig av Ubuntu, i motsetning til de andre utgavene som er fullt ut kompatible med Ubuntu.</p>
             <p>Linux Mint er det tredje mest brukte operativsystemet i verden etter Microsoft Windows og Apple Mac Osx. Operativsystemet troner på toppen av <a href="http://distrowatch.com" target="_blank">DistroWatch</a> sin liste over populære Linux/Unix-operativsystemer.</p>
+            </article>
+
+            <article class="mintarticle" id="mintsuksess">
             <h3>Noen av grunnene for Linux Mint sin suksess er:</h3>
+
             <ul>
                 <li>Linux Mint er både enkelt og sikkert å bruke, og gir god støtte for multimedia
                     <em>out of the box.</em></li>
                 <li>Linux Mint er gratis og har åpen kildekode.</li>
-                <li>Linux mint har et aktivt utviklermiljø. Brukerne oppfordres til å sende tilbakemldinger for å forbedre Linux Mint.</li>
-                <li>Operativsystemet er basert på Ubuntu og Debian noe som gjør at det er over 30000 pakker tilgjengelig for nedlastning.</li>
+                <li>Linux mint har et aktivt utviklermiljø. Brukerne oppfordres til å sende tilbakemeldninger for å forbedre Linux Mint.</li>
+                <li>Operativsystemet er basert på Ubuntu og Debian, noe som gjør at det er over 30000 pakker tilgjengelig for nedlastning.</li>
             </ul>
         </article>
-        <article class="mintarticle">
+        <!-- Video -->
+        <article class="mintarticle" id="mintvideo">
+            <h3>Windows 10 vs Linux Mint 17.2</h3>
+            <p>Hva kan linux Mint 17.2 tilby iforhold til Windows 10?</p>
+            <p><strong>Sjekk ut denne videoen</strong></p>
+            <video src="../img/Win10vsLinuxMint17.2.mp4" controls></video>
+        </article>
+        <!-- Slutt på video -->
+        <!-- Kilder desktop -->
+        <article class="mintarticle" id="kilder">
             <h3>Kilder</h3>
             <ul>
                 <li class="horizontal"><a href="http://linuxmint.com/" target="_blank">LinuxMint.com</a></li>
@@ -89,12 +114,24 @@
                 <li class="horizontal"><a href="http://www.gnu.org/gnu/linux-and-gnu.html" target="_blank">GNU/Linux</a></li>
             </ul>
         </article>
+        <!-- Kilder desktop slutt -->
+        <!-- Kilder mobil -->
+                <article class="mintarticle" id="kildermobil">
+            <h3>Kilder</h3>
+            <ul>
+                <li class="horizontal"><a href="http://linuxmint.com/" target="_blank">LinuxMint.com</a><br></li>
+                <li class="horizontal"><a href="https://en.wikipedia.org/wiki/Linux_Mint" target="_blank">Wikipedia.com</a><br></li>
+                <li class="horizontal"><a href="http://distrowatch.com/table.php?distribution=mint" target="_blank">DistroWatch.com</a><br></li>
+                <li class="horizontal"><a href="http://www.gnu.org/gnu/linux-and-gnu.html" target="_blank">GNU/Linux</a><br></li>
+            </ul>
+        </article>
+        <!-- Kilder mobil slutt -->
     </section>
     <!-- Slutt på bodytext/hovedinnhold -->
     <!-- Her starter felles footer -->
     <footer>
         <p>
-            |&nbsp;&nbsp; <a href="http://www.hbv.no/studietilbud/bachelor-i-informasjonssystemer-og-it-ledelse/">Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="https://www.hbv.no/">Besøk  skolens hjemmeside</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="http://wedontknow.codes">Mer info om gruppen finnes her</a>&nbsp;&nbsp;|</p>
+            |&nbsp;&nbsp; Skoleprosjekt - Informasjonssystemer og IT-ledelse på Buskerud og Vestfold Høyskolen&nbsp;&nbsp; |&nbsp;&nbsp; <a href="https://www.hbv.no/">Besøk  skolens hjemmeside</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://wedontknow.codes">Mer info om gruppen finnes her</a>&nbsp;&nbsp;|</p>
         <p>|&nbsp;&nbsp;<a href="mailto:post@wedontknow.codes">Sends oss en mail</a>&nbsp;&nbsp;|</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

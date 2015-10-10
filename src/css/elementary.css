@@ -1,0 +1,43 @@
+p {
+    font-size: 17px;
+}
+
+    /* Wiki CSS  */
+
+    #wikitekst {
+    font-style: bold;
+    font-size: 120%;
+    margin: 0 0 5px 0;
+}
+
+#wiki {
+ 
+    float: right;
+    margin: 5px 20px 30px 50px;
+    width: 365px;
+    font-family: 'Cutive Mono', sans-serif;
+    border: 5px solid black;
+    padding: 0px 10px 0px 10px;
+    font-size: 110%;
+
+}
+#wiki dt {
+    color: dodgerblue;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+
+}|
+#wiki dt:after {
+    content:" ";
+}
+#wiki dd {
+    color: black;
+    margin: 0 0 0 150px;
+    padding: 0 0 0 0;
+}
+
+#kilder li 
+{
+    list-style-type: none;
+}

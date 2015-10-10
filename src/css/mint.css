@@ -1,11 +1,49 @@
 @charset "UTF-8";
+@media screen and (max-device-width: 640px) {
+    /*
+        Fjerner #sidebarmint box på mobile enheter som har
+        en maks skjermbredde på 640px;
+    */
+    #mintboxdiv ul {
+        width:150px;
+    }
+
+    #sidebarmint {
+        display: none;
+    }
+
+    .container {
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    }
+
+    #kilder {
+        display: none;
+    }
+    video {
+        width:300px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    /* Desktopspesifikk*/
+    #kildermobil {
+        display: none;
+    }
+        video {
+        width:600px;
+    }
+
+}
 
 /* CSS for sidebar/linker på høyre side */
 
 #sidebarmint aside ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     float: right;
     padding-right: 50px;
     padding-top: 10px;
@@ -13,17 +51,37 @@
 
 #sidebarmint aside ul li a {
     display: inline-block;
-    width: 60px;
-    background-color: black;
-    color: white;
-    padding: 10px 50px;
+    /*width: 60px;*/
+    /*background-color: black;*/
+    color: black;
+    /*padding: 10px 50px;*/
     text-decoration: none;
-    border-radius: 7px 7px 7px 7px;
+    /*border-radius: 7px 7px 7px 7px;*/
+}
+/* fjerne hoover effekt fra style.css*/
+#sidebarmint aside ul li a:hover {
+    background: none;
+    color: none;
 }
 
 #sidebarmint aside li {
-    padding: 20px;
+    /*padding: 15px;*/
     list-style-type: none;
+    text-align: center;
+    margin-top: 23px;
+}
+/* CSS for mintbox */
+#mintbox{
+    display: inline-block;
+    list-style:none;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 5px solid green;
+    float:right;
+    width: 260px;
+    font-size: 80%;
+    margin-top: 0em;
 }
 
 
@@ -39,7 +97,7 @@
 
 /* CSS for header og Mintlogo */
 
-header {
+main {
     color: green;
     padding: 40px;
     margin: auto;
@@ -47,11 +105,16 @@ header {
     padding-bottom: 0px;
 }
 
+#startartikkel {
+    margin-top: -2.2em;
+}
+
 
 /* CSS for class=mintarticle og kilder*/
 
 .mintarticle {
     color: black;
+    /*margin-right: 15px;*/
 }
 
 .mintarticle ul li {
@@ -68,6 +131,10 @@ header {
     display: inline;
 }
 
+#mintsuksess {
+    width: 80%;
+}
+
 
 /* Farger på linker */
 
@@ -77,4 +144,32 @@ header {
 
 .container a:visited {
     color: coral;
+}
+
+/* Hoover på sidebar */
+.btn {
+  background: darkgreen;
+  background-image: -webkit-linear-gradient(top, darkgreen, lightgreen);
+  background-image: -moz-linear-gradient(top, darkgreen, lightgreen);
+  background-image: -ms-linear-gradient(top, darkgreen, lightgreen);
+  background-image: -o-linear-gradient(top, darkgreen, lightgreen);
+  background-image: linear-gradient(to bottom, darkgreen, lightgreen);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: Black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: green;
+  background-image: -webkit-linear-gradient(top, green, white);
+  background-image: -moz-linear-gradient(top, green, white);
+  background-image: -ms-linear-gradient(top, green, white);
+  background-image: -o-linear-gradient(top, green, white);
+  background-image: linear-gradient(to bottom, green, white);
+  text-decoration: none;
 }
