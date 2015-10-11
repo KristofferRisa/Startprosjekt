@@ -11,8 +11,8 @@ if($_POST) {
     $message = $_POST["message"];
     if(strlen($name)>0 && strlen($mail) > 0 && strlen($message) > 0) {
                 
+        //SQL for å legge inn ny melding
         $sql = "insert into contact values('".$name."','".$mail."','".$message."',now());";
-
         // Connecting, selecting database
         $link = mysqli_connect($servername, $username, $password);
         if(!$link) {
@@ -23,21 +23,16 @@ if($_POST) {
         
         if(mysqli_query($link, $sql)){
             echo "Records added successfully.";
+            //Sender status melding tilbake til hovedsiden via querystring
             $status = "successful";
         } else{
-//            $filnavn = getcwd()."/error.log";
-//            $fil = fopen($filnavn,"w");
-//            fwrite($fil, "ERROR: Could not able to execute $sql. " . mysqli_error($link));
-//            fclose($fil);
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-            
+            //Sender status melding tilbake til hovedsiden via querystring
             $status = "failed";
         }
-
-        //echo 'Connected successfully';
         mysqli_close($link);
-       
-        //header("Location: ./index.html?status=".$status."#kontakt");
+        //Redirects request tilbake til hovedsiden
+        header("Location: ./index.html?status=".$status."#kontakt");
     }
 }
 ?>
