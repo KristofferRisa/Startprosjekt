@@ -25,14 +25,19 @@ if($_POST) {
             echo "Records added successfully.";
             $status = "successful";
         } else{
+//            $filnavn = getcwd()."/error.log";
+//            $fil = fopen($filnavn,"w");
+//            fwrite($fil, "ERROR: Could not able to execute $sql. " . mysqli_error($link));
+//            fclose($fil);
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+            
             $status = "failed";
         }
 
         //echo 'Connected successfully';
         mysqli_close($link);
        
-        header("Location: ./index.html?status=".$status."#kontakt");
+        //header("Location: ./index.html?status=".$status."#kontakt");
     }
 }
 ?>
