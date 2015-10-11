@@ -1,5 +1,5 @@
 /*
-    Top Banner logo section
+    Top Banner / logo
 */
 body {
     margin: 0;
@@ -39,7 +39,7 @@ h1 {
     margin: 0;
 }
 
-h1,h2,h3,h4,figcaption,p {
+h1,h2,h3,h4,figcaption,p,input,textarea {
     font-family: 'Economica', sans-serif;
 }
 p {
@@ -62,7 +62,7 @@ ul {
 }
 
 /*
-    Nav section
+    Nav seksjon
 */
 nav {
     background: url("../img/header-bkg.jpg") repeat fixed center;
@@ -138,10 +138,10 @@ nav ul li ul.dropdown li {
 .navbar-fixed ~ .container{
   margin-top: 78px;
 }
-
+/* Nav seksjon ferdig */
 
 /*
-    Footer section
+    Footer seksjon
 */
 footer {
     background-color: black;
@@ -168,30 +168,39 @@ footer a {
     color: white;
     text-decoration: none;
 }
+/* footer seksjon ferdig */
 
-.om {
+.heading {
     margin-top: 50px;   
 }
 
+.kontakt > input,textarea  {
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+.two-col {
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;  
+    -webkit-column-rule: 1px solid grey; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid grey; /* Firefox */
+    column-rule: 1px solid grey;
+ }
+
 /*
-    Makes the article more responsive
-  */
+    Mer responsiv og leservennlig artikler 
+*/
 @media screen and (min-width:1200px){
   .two-col {
       -webkit-columns: 2 200px;
       -moz-columns: 2 200px;
-      columns: 2 200px;
-      -webkit-column-gap: 4em;
-      -moz-column-gap: 4em;
-      column-gap: 4em;      
+      columns: 2 200px;    
       }
-
-       /*
-           Wiki CSS - formating the Definition List
-       */
-       .wiki {
-           float: right;
-       }
+   .wiki {
+       float: right;
+   }
  .container {
     padding: 40px;
     margin: 0 auto;
@@ -206,15 +215,13 @@ footer a {
   .two-col {
       -webkit-columns: 1 200px;
       -moz-columns: 1 200px;
-      columns: 1 200px;
-      -webkit-column-gap: 4em;
-      -moz-column-gap: 4em;
-      column-gap: 4em;      
+      columns: 1 200px;  
     }
     
-    p {
+    p,li,input,textarea {
         font-size: 1.4em;
     }
+    
     
     h1 {
         font-size: 2.2em;
@@ -223,13 +230,22 @@ footer a {
     h2 {
         font-size: 2em;
     }
+    h3 {
+        font-size: 1.8em;   
+    }
+    .container {
+        padding: 40px;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+/*
+    Justerer innholdet for mobil
+*/
+@media screen and (max-width: 600px) {
     .container {
         padding: 40px;
         margin: 0 auto;
         width: 80%;
     }
-}
-
-@media screen and (max-width: 500px) {
-
 }

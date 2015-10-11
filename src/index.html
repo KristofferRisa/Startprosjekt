@@ -84,11 +84,10 @@
         
         
         <br>
+        </section>
         
-        <h1>Hva er en distribusjon</h1>
-        
-            
-
+        <h1 class="heading">Hva er en distribusjon</h1>
+        <section class="two-col">
             <p>Det finnes mange forskjellige versjoner av Linux som kan dekke nesten alle behov brukeren skulle ha. Fra nye brukere til erfarene brukere. Disse versjonene kaller vi distribusjoner. Nesten alle dristribusjonene er gratis. De dere vil finne en oversikt over på denne siden er</p>
 
             <ul>
@@ -120,10 +119,9 @@
             </ul>
 
         </section>
-
         <section name="om" id="om">
 
-            <h1 class="om">Om siden</h1>
+            <h1 class="heading">Om siden</h1>
 
             <p>Dette er en side laget angående Linux og dens distribusjoner i forbindelse med skoleprosjekpå Høyskolen i Buskerud og Vestfold</p>
 
@@ -139,14 +137,15 @@
             </ul>
 
             <h3 id="kontakt">Kontakt oss</h3>
-            <form method="post" action="contact-form.php" name="kontakt-skjema" id="kontakt-skjema">
+            <form method="post" action="contact-form.php" name="kontakt-skjema" id="kontakt-skjema" class="kontakt">
                 <input type="text" name="name" required="true" placeholder="Navn" >
                 <br>
                 <input type="text" name="mail" required="true" placeholder="epost">
                 <br>
-                <textarea name="message" required="true" placeholder="Beskjed" rows="5"></textarea>
+                <textarea name="message" required="true" placeholder="Beskjed" rows="5" cols="40"></textarea>
                 <br>
                 <input type="submit" name="submit" value="Send" >
+                <input type="reset" name="reset" value="Nullstill">
             </form>
             <p>
                 <a href="../gruppekontrakt/gruppekontrakt.pdf">Gruppekontrakt</a>
