@@ -1,25 +1,71 @@
 @charset "UTF-8";
 /* CSS dokument med alt CSS for Arch */
 
-nav {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-    position: absolute;
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px){
+    /*
+        Fjerner wiki box på mobile enheter som har
+        en maks skjermbredde på 480px;
+    */
+    .wiki {
+        display: none;
+    }
 }
-#meny {
+
+/* fonts */
+
+dd, dt {
+    font-family: 'Economica', sans-serif;
+}
+
+
+/*
+    kilde liste formatering
+*/
+.kilder li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
+    /*
+        Wiki CSS - formating the Definition List
+    */
+    #wiki {
+        float: right;
+        margin: 0px 50px 30px 40px;
+        width: 300px;
+        font-family: 'Cutive Mono', sans-serif;
+        border: 2px solid black;
+        padding: 0px 10px 0px 10px;
+        font-size: 110%;
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
 
-li {
-    display: inline;
-}
-
-#dropdown {
-	display: list-item;
-}
 
 
+    .wiki dl {
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+
+    .wiki dt {
+        float: left;
+        width: 120px;
+        font-weight: bold;
+  /*    color: green; */
+    }
+
+/*    .wiki dt:after {
+        content: ": ";
+    }*/
+
+    .wiki dd {
+        margin: 0 0 0 110px;
+    }
+    .wiki-header{
+         font-weight: bold;
+            text-decoration: underline;
+    }

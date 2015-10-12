@@ -13,16 +13,16 @@ p {
 #wiki {
  
     float: right;
-    margin: 5px 20px 30px 50px;
+    margin: 5px 40px 30px 50px;
     width: 365px;
     font-family: 'Cutive Mono', sans-serif;
-    border: 5px solid black;
+    border: 2px solid black;
     padding: 0px 10px 0px 10px;
     font-size: 110%;
 
 }
 #wiki dt {
-    color: dodgerblue;
+    color: #40A3B6;
     float: left;
     text-align: right;
     font-weight: bold;
@@ -40,4 +40,19 @@ p {
 #kilder li 
 {
     list-style-type: none;
+}
+
+#freya img {
+    width: 65%;
+    height: 65%; 
+    margin: 20px 0 5px 0;
+    z-index: -1px;
+}
+    
+
+#article p {
+    width: 65%;
+    height: 65%; 
+    margin: 20px 0 5px 0;
+    
 }

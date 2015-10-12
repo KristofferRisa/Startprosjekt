@@ -36,17 +36,25 @@
     }
 
 }
+@media screen and (max-width: 1199px) {
+p, li {
+    font-size: 1em;
+
+}
+}
+
 
 /* CSS for sidebar/linker på høyre side */
 
 #sidebarmint aside ul {
     list-style-type: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 5em;
     float: right;
     padding-right: 50px;
     padding-top: 10px;
+    display: none;
 }
 
 #sidebarmint aside ul li a {
@@ -110,11 +118,15 @@ main {
 }
 
 
+
 /* CSS for class=mintarticle og kilder*/
 
 .mintarticle {
     color: black;
     /*margin-right: 15px;*/
+}
+ .mintarticle li {
+  font-size: 1em;
 }
 
 .mintarticle ul li {
