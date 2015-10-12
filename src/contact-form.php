@@ -1,38 +1,53 @@
 <?php
-$servername = "128.199.43.177:3306";
-$username = "data";
-$password = "AU7JSShStzvrBmdE";
-$dbname = "wedontknowcodes";
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "db";
 
-//Post data
-if($_POST) {
-    $name = $_POST["name"];
-    $mail = $_POST["mail"];
-    $message = $_POST["message"];
-    if(strlen($name)>0 && strlen($mail) > 0 && strlen($message) > 0) {
-                
-        //SQL for å legge inn ny melding
-        $sql = "insert into contact values('".$name."','".$mail."','".$message."',now());";
-        // Connecting, selecting database
-        $link = mysqli_connect($servername, $username, $password);
-        if(!$link) {
-            die('Could not connect: ' . mysql_error());
+require("autoload.php");
+$recaptcha = new \ReCaptcha\ReCaptcha("secret");
+$remoteIp = "remote";
+$gRecaptchaResponse = $_POST['g-recaptcha-response'];
+
+$resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+if ($resp->isSuccess()) {
+    // verified!
+    //Post data
+    if($_POST) {
+        $name = $_POST["name"];
+        $mail = $_POST["mail"];
+        $message = $_POST["message"];
+        if(strlen($name)>0 && strlen($mail) > 0 && strlen($message) > 0) {
+
+            //SQL for å legge inn ny melding
+            $sql = "insert into contact values('".$name."','".$mail."','".$message."',now());";
+            // Connecting, selecting database
+            $link = mysqli_connect($servername, $username, $password);
+            if(!$link) {
+                die('Could not connect: ' . mysql_error());
+            }
+
+            mysqli_select_db($link,$dbname) or die ("no database");  
+
+            if(mysqli_query($link, $sql)){
+                echo "Records added successfully.";
+                //Sender status melding tilbake til hovedsiden via querystring
+                $status = "successful";
+            } else{
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                //Sender status melding tilbake til hovedsiden via querystring
+                $status = "failed";
+            }
+            mysqli_close($link);
+            //Redirects request tilbake til hovedsiden
+            header("Location: ./index.html?status=".$status."#kontakt");
         }
-        
-        mysqli_select_db($link,$dbname) or die ("no database");  
-        
-        if(mysqli_query($link, $sql)){
-            echo "Records added successfully.";
-            //Sender status melding tilbake til hovedsiden via querystring
-            $status = "successful";
-        } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-            //Sender status melding tilbake til hovedsiden via querystring
-            $status = "failed";
-        }
-        mysqli_close($link);
-        //Redirects request tilbake til hovedsiden
-        header("Location: ./index.html?status=".$status."#kontakt");
     }
+} else {
+    $errors = $resp->getErrorCodes();
+    //print $errors;
+    $status = "robot";
+    header("Location: ./index.html?status=".$status."#kontakt");
 }
+
 ?>
