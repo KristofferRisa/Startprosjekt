@@ -85,7 +85,7 @@
 
         <section id="download">
             <p>
-                Du kan laste ned en gratis versjon av Linux Debian <a href="http://cdimage.debian.org/debian-cd/8.1.0/multi-arch/iso-cd/debian-8.1.0-amd64-i386-netinst.iso">her</a>.
+                Du kan laste ned en gratis versjon av Linux Debian <a href="https://www.debian.org/distrib/netinst">her</a>.
             </p>
         </section>
 
@@ -110,6 +110,6 @@
         include("../footer.html");
         /* Laster inn scripts */
         include("../scripts.html");
-    ?>    
+    ?>
     </body>
 </html>
