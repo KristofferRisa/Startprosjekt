@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
+    <title>Linux Tails</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/tails.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <?php
+        include("../header-partial.html");
+    ?>
+</head>
+
+<body>
+
+    <?php
+        /* Laster inn navgiasjons html kode  */
+        include("../nav.html");
+    ?>
+
+    <main class="container">
+
+    <main id="tailsimg"><img src="img/Tails-Logo.jpg" alt=Tails-Logo></main>
+    
+        
+            <hr>
+
+        <h1>Om distribusjonen:</h1>
+        <section>
+            <article>
+           
+                <p>Tails eller "The Amnisic Incognito Live System" er et <a href="../debian/">Debian</a> basert Linux distribusjon som har fokus på anonymitet og privatliv.
+                Alle utgående koblinger er da tvunget til å gå igjennom <a href="https://www.torproject.org/" id="tor">Tor</a>. systemet er designet til å  bli "bootet" live via DVD eller USB og vil ikke legge igjen noen digitale spor på datamaskinen med mindre brukeren spesifikt ber om det. </p> 
+                     
+               <ul id="box">
+                    <li>Finansiert av:    "The Tor Group"</li>
+                    <li>Utgitt:           23. Juni 2009</li>
+                    <li>Siste utgivelse:  "Tails 1.5" <br>11. August 2015</li>
+                    <li>Lisens:           GPLV3+ (Fri programvare)</li>
+                    <li>Nettside:         <a href="https://tails.boum.org">https://tails.boum.org</a></li>
+              </ul>
+
+              <img src="img/Tails_screenshot.png" alt="tails desktop">
+              <figcaption> "Tails operativsystem m/ Tor browser" (kilde: <a href="https://en.wikipedia.org/wiki/Tails_(operating_system)">Wikipedia</a>) </figcaption>
+              <h2>Tor:</h2>
+                <p>Tor (forkortelse for The Onion Router) er et informasjonssystem beregnet på å muliggjøre elektronisk anonymitet. Tor-programvaren sender Internett-trafikk gjennom et verdensomspennende, frivillig nettverk av datamaskiner, med det formål å skjule brukerens plassering eller aktivitet for andre som driver nettverksovervåking eller trafikkanalyse. Bruk av Tor gjør det vanskeligere å spore brukerens nettaktivitet, f.eks. «besøk av en nettside, elektroniske innlegg, pratemeldinger og andre kommunikasjonsformer» og har som mål å beskytte brukernes personlige frihet, personvern og evne til å drive konfidensiell virksomhet, ved å hindre overvåking av nettaktiviteten.  </p>
+
+            <h2> Kilder:</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Tails_(operating_system)" >Wikipedia</a></li>
+                <li><a href="https://www.torproject.org/">https://www.torproject.org/</li>
+                <li><a href="https://tails.boum.org">https://tails.boum.org</a></li>
+
+
+
+            
+
+
+            </article>
+        </section>
+
+</main>
+            
+
+    
+
+    <?php
+        /* Laster inn fotter html kode  */
+        include("../footer.html");
+        /* Laster inn scripts */
+        include("../scripts.html");
+    ?>    
+</body>
+
+</html>
